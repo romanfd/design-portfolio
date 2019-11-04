@@ -1,0 +1,73 @@
+@import "normalize";
+@import "variables";
+@import "mixin";
+
+
+/* Basic styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color-black;
+
+  background-color: $color-white;
+
+  transition: all 0.5s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/burger-menu";
+@import "blocks/intro";
+@import "blocks/project";
+@import "blocks/about";
+@import "blocks/review";
+@import "blocks/blog";
+@import "blocks/footer";
+
